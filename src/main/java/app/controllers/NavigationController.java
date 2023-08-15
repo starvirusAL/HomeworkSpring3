@@ -23,7 +23,7 @@ public class NavigationController {
         Map<String, String[]> allParams = rq.getParameterMap();
         if (form.getCheckPage() == 0) return "redirect:personalInformation";
         if (form.getCheckPage() == 1) return "redirect:accountCreate";
-        if (form.getCheckPage() == 2) return "redirect:customCreate";
+        if (form.getCheckPage() == 2) return "redirect:customer-create";
         if (form.getCheckPage() == 3) return "redirect:list";
         if (form.getCheckPage() == 4) return "redirect:putMoney";
         if (form.getCheckPage() == 5) return "redirect:withdrawMoney";

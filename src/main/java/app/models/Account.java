@@ -4,9 +4,11 @@ package app.models;
 import app.custom.RandomNumber;
 import app.enums.Currency;
 import lombok.Data;
+import org.hibernate.annotations.CreationTimestamp;
 
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -21,7 +23,8 @@ public class Account {
     private Currency currency;
     private Double balance = 0.0;
 
-
+    @CreationTimestamp
+    private LocalDateTime createdDateTime;
     @OneToMany(mappedBy = "account")
     private List<Account> account;
 

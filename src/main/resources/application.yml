@@ -3,7 +3,7 @@ server:
 spring:
   profiles:
     activate:
-      on-profile: local
+      on-profile: dev
 h2:
   console:
     enabled: true
@@ -39,9 +39,9 @@ spring:
     properties:
       hibernate.format_sql: "true"
   datasource:
-    url: ${DB_URL} #jdbc:mysql://jg507082.mysql.tools:3306/jg507082_fs4online
-    username: ${DB_USERNAME} #jg507082_fs4online
-    password: ${DB_PASSWORD} #c-zNZ)97d9
+    url: ${DB_URL} #jdbc:mysql://jg507082.mysql.tools:3306/jg507082_oleksii
+    username: ${DB_USERNAME} #jg507082_oleksii
+    password: ${DB_PASSWORD} #(Ut7Lc6&7e
 
 
 

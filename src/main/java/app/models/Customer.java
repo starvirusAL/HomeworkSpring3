@@ -30,19 +30,22 @@ public class Customer {
     private List<Customer> customer;
 
     @LazyCollection(LazyCollectionOption.FALSE)
-    @ManyToMany(mappedBy = "customers",cascade = {CascadeType.REMOVE})
+    @ManyToMany(mappedBy = "customers", cascade = {CascadeType.REMOVE})
     private Set<Employer> employers = new HashSet<>();
 
-    public Customer(){
+    public Customer() {
 
     }
 
-    public Customer(String name, Integer age, String email, Account account) {
-        this.age = age;
+    public Customer(String name, Integer age, String email, String phoneNumber,Account account) {
         this.name = name;
+        this.age = age;
         this.email = email;
+        this.phoneNumber = phoneNumber;
         this.account = account;
     }
+
+
 
 
     @Override

@@ -5,20 +5,19 @@ import lombok.Data;
 
 @Data
 public class InputItems {
-  String name;
 
-  String address;
+  String name;
   String email;
   Integer age;
-
+  String phoneNumber;
   Double valueM;
-
+  String address;
+  Currency inputCurrency;
   int idCustomer;
   int idAccount;
-
-  int idCustomer2;
   int idAccount2;
-  Currency inputCurrency;
+  int idEmployer;
   int checkPage;
+
 
 }

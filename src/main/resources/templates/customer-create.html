@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+</head>
+<body>
+<p>Create new Customer</p>
+<form action="#" th:action="@{/customer-create}" th:object="${customerRequest}" method="post">
+    <table>
+        <tr>
+            <td>Name Customer</td>
+            <td><input type="text" name="name" th:field="*{name}"/></td>
+            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Error in Name field</td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><input type="text" name="email" th:field="*{email}"/></td>
+            <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Error in Name field</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="text" name="age" th:field="*{age}"/></td>
+            <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Error in Name field</td>
+        </tr>
+        <tr>
+            <td>Phone number</td>
+            <td><input type="text" name="phoneNumber" th:field="*{phoneNumber}"/></td>
+            <td th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}">Error in Name field</td>
+        </tr>
+        <tr>
+            <td>Id Employer</td>
+            <td><input type="number" name="idEmployer"/></td>
+            <td>Your IDAccount:</td>
+            <td><input type="number" name="idAccount"/></td>
+
+
+<!--            <td><input type="text" name="address" th:field="*{address}"/></td>-->
+<!--            <td th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Error in Name field</td>-->
+        </tr>
+        <tr>
+            <td><button type="submit">Submit</button></td>
+        </tr>
+    </table>
+</form>
+<!--<p>Create new customer</p><br>-->
+
+<!--<form method="post">-->
+<!--   <p>Name:</p>-->
+<!--    <input type="text" name="name"><br>-->
+
+<!--   <p>E-mail:</p>-->
+<!--    <input type="text" name="email"><br>-->
+
+<!--   <p>Your Age:</p>-->
+<!--    <input type="text" name="age"><br><br>-->
+
+<!--    <p>Id Employer:</p>-->
+<!--    <input type="number" name="idEmployer"><br><br>-->
+
+<!--    <input type="submit">-->
+<!--</form>-->
+
+</body>
+</html>

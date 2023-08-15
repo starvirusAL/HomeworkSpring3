@@ -3,6 +3,8 @@ package app.controllers;
 import app.Service.AccountService;
 import app.Service.CustomerService;
 import app.custom.TableHeader;
+import app.dto.CustomerMapper;
+import app.dto.CustomerRequest;
 import app.models.Account;
 import app.models.Customer;
 import app.models.InputItems;
@@ -10,11 +12,14 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.persistence.EntityManager;
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 
@@ -25,31 +30,29 @@ public class CustomerController {
     private final EntityManager em;
 
     private final CustomerService customerService;
-
+    //private final CustomerMapper dtoCustomerMapper;
     private final AccountService accountService;
 
-    @GetMapping("customCreate")
-    public String customCreate() {
-        return "customCreate";
+    @GetMapping("customer-create")
+    public String customCreate(CustomerRequest customerRequest) {
+        return "customer-create";
     }
 
-    @PostMapping("customCreate")
-    public String customCreate(InputItems form, HttpServletRequest rq) {
-        Map<String, String[]> allParams = rq.getParameterMap();
+    @PostMapping("customer-create")
+    public String customCreate(InputItems form, HttpServletRequest rq, @Valid CustomerRequest customerRequest, BindingResult result) {
+        if (result.hasErrors()) {
+            List<FieldError> fieldErrors = result.getFieldErrors();
+            fieldErrors.forEach(System.out::println);
+            return "customer-create";
+        }
         Account account = accountService.getAccountById(form.getIdAccount());
-        Customer c = new Customer(form.getName(), form.getAge(), form.getEmail(), account);
-        customerService.create(c);
+        Customer customer = new Customer(form.getName(), form.getAge(), form.getEmail(), form.getPhoneNumber(), account);
+
+        customerService.create(customer);
         return "redirect:navigation";
     }
 
 
-
-    /*@GetMapping("list")
-    public String findAllStudentsWithJpql(Model model) {
-        model.addAttribute("customer", customerService.findAll());
-        return "listCustomer";
-
-    }*/
     private Map<String, Object> data() {
         TableHeader th = new TableHeader("Id", "Name", "E-mail", "Account");
         List<Customer> tb = customerService.findAll();

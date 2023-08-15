@@ -1,5 +1,6 @@
 package app.Service;
 
+import app.dto.CustomerRequest;
 import app.models.Account;
 import app.models.Customer;
 import app.repo.AccountRepo;
@@ -18,9 +19,13 @@ public class CustomerService implements CustomerServiceInterface {
 
     private final AccountRepo accountRepo;
 
-    public void create(Customer c) {
-        customerRepo.save(c);
+
+
+
+    public void create(Customer customer) {
+        customerRepo.save(customer);
     }
+
     public List<Customer> findAll(){
         return customerRepo.findAll();
     }
