@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d88d4f3-6899-4807-86cb-987a8ce6e020" name="Changes" comment="" />
+    <list default="true" id="7d88d4f3-6899-4807-86cb-987a8ce6e020" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/dto/Negative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dto/AccountRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dto/AccountRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dto/AccountResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dto/AccountResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dto/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dto/CustomerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/dto/CustomerResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/dto/CustomerResponseDto.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +22,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -46,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Ide/HomeworkSpring3"
+    "last_opened_file_path": "C:/Ide/HomeworkSpring3/src/main/java/app/dto"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -176,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692108739241</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="//1.01">
+      <created>1692110427343</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692110427343</updated>
+    </task>
+    <task id="LOCAL-00007" summary="//1.02">
+      <created>1692110486695</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692110486695</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +207,7 @@
     <MESSAGE value="//Работа над местом роботы" />
     <MESSAGE value="//ФИНАЛЬНАЯ" />
     <MESSAGE value="//1.01" />
-    <option name="LAST_COMMIT_MESSAGE" value="//1.01" />
+    <MESSAGE value="//1.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="//1.02" />
   </component>
 </project>

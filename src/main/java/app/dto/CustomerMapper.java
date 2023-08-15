@@ -1,7 +1,8 @@
 package app.dto;
 
 
-import homework1.models.Customer;
+
+import app.models.Customer;
 import org.springframework.stereotype.Service;
 
 @Service

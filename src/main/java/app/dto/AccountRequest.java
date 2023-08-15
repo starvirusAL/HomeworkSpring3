@@ -1,10 +1,12 @@
 package app.dto;
 
-import homework1.models.Currency;
+
+import app.enums.Currency;
 import lombok.Data;
+import org.jetbrains.annotations.NotNull;
 
 import javax.validation.constraints.Negative;
-import javax.validation.constraints.NotNull;
+
 
 @Data
 public class AccountRequest {

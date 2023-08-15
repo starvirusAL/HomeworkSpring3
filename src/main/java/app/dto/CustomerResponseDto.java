@@ -1,7 +1,8 @@
 package app.dto;
 
-import homework1.models.Account;
-import homework1.models.Employer;
+
+import app.models.Account;
+import app.models.Employer;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

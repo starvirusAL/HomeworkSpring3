@@ -1,7 +1,8 @@
 package app.dto;
 
+import app.enums.Currency;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import homework1.models.Currency;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
