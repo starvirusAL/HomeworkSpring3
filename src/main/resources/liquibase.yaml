@@ -1,0 +1,14 @@
+# prod-connection
+url: jdbc:mysql://jg507082.mysql.tools:3306/jg507082_fs4online
+username: jg507082_fs4online
+password: c-zNZ)97d9
+
+# dev-connection
+referenceUrl: jdbc:mysql://jg507082.mysql.tools:3306/jg507082_fs4onlinedev
+referenceUsername: jg507082_fs4online
+referencePassword: 2#_9KhiG4n
+
+# conf
+changeLogFile: src/main/resources/db/changelog/master.yaml
+outputChangeLogFile: src/main/resources/db/changelog/master.yaml
+diffChangeLogFile: src/main/resources/db/changelog/diff.yaml

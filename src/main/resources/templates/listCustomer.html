@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+All accounts from test
+
+<table border="2">
+    <thead>
+        <tr>
+            <td th:text="${thead.id}"></td>
+            <td th:text="${thead.name}"></td>
+            <td th:text="${thead.email}"></td>
+            <td th:text="${thead.account}"></td>
+        </tr>
+    </thead>
+    <tbody>
+       <tr th:each="line: ${tbody}">
+            <td th:text="${line.id}"></td>
+            <td th:text="${line.name}"></td>
+            <td th:text="${line.email}"></td>
+            <td th:text="${line.account}"></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+</body>
+</html>
