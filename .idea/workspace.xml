@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d88d4f3-6899-4807-86cb-987a8ce6e020" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/Service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/AbstractEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692124602432</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="//List customer pagination /customer/page/size">
+      <created>1692682889151</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692682889151</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,6 +232,7 @@
     <MESSAGE value="//1.02" />
     <MESSAGE value="//1.03" />
     <MESSAGE value="//final" />
-    <option name="LAST_COMMIT_MESSAGE" value="//final" />
+    <MESSAGE value="//List customer pagination /customer/page/size" />
+    <option name="LAST_COMMIT_MESSAGE" value="//List customer pagination /customer/page/size" />
   </component>
 </project>
