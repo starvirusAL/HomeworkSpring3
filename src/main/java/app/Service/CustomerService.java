@@ -1,12 +1,16 @@
 package app.Service;
 
 import app.dto.CustomerRequest;
+import app.dto.CustomerResponseDto;
 import app.models.Account;
 import app.models.Customer;
 import app.repo.AccountRepo;
 import app.repo.CustomerRepo;
 import app.serviceInterface.CustomerServiceInterface;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,8 +23,30 @@ public class CustomerService implements CustomerServiceInterface {
 
     private final AccountRepo accountRepo;
 
+    public List<CustomerResponseDto> showAll() {
+        return customerRepo.findAll()
+                .stream()
+                .map(p -> {
+                    CustomerResponseDto pp = new CustomerResponseDto() {{
 
+                        setName(p.getName());
+                        setAge(p.getAge());
+                        setEmail(p.getEmail());
+                        setPhoneNumber(p.getPhoneNumber());
 
+                        setEmployers(p.getEmployers());
+                    }};
+                    return pp;
+                })
+                .filter(p -> p.getName() != null)
+                .filter(p -> !p.getName().isBlank())
+                .toList();
+    }
+    public List<Customer> showAllPage(Integer  page, Integer size){
+        Pageable pageable = PageRequest.of(page,size);
+        Page<Customer> customerPage = customerRepo.findAll(pageable);
+        return customerPage.toList();
+    }
 
     public void create(Customer customer) {
         customerRepo.save(customer);

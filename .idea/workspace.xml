@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d88d4f3-6899-4807-86cb-987a8ce6e020" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/customer-create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/controllers/NavigationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/controllers/NavigationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/dto/Negative.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/models/InputItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/models/InputItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/Service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/Service/CustomerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/controllers/NavigationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/controllers/NavigationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/models/InputItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/app/models/InputItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +53,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Ide/HomeworkSpring2"
+    "last_opened_file_path": "C:/Ide/chatProject",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -93,7 +83,7 @@
       <recent name="app.repo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.dev">
+  <component name="RunManager" selected="Application.prod">
     <configuration name="MainLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.MainLauncher" />
       <module name="Homework2" />
@@ -220,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692110726828</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="//final">
+      <created>1692124602432</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692124602432</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -231,6 +228,7 @@
     <MESSAGE value="//1.01" />
     <MESSAGE value="//1.02" />
     <MESSAGE value="//1.03" />
-    <option name="LAST_COMMIT_MESSAGE" value="//1.03" />
+    <MESSAGE value="//final" />
+    <option name="LAST_COMMIT_MESSAGE" value="//final" />
   </component>
 </project>

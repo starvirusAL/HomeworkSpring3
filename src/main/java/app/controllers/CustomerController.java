@@ -5,23 +5,28 @@ import app.Service.CustomerService;
 import app.custom.TableHeader;
 import app.dto.CustomerMapper;
 import app.dto.CustomerRequest;
+import app.dto.CustomerResponseDto;
 import app.models.Account;
 import app.models.Customer;
 import app.models.InputItems;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.persistence.EntityManager;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @Controller
 @Log4j2
@@ -30,8 +35,22 @@ public class CustomerController {
     private final EntityManager em;
 
     private final CustomerService customerService;
-    //private final CustomerMapper dtoCustomerMapper;
+
     private final AccountService accountService;
+    private final CustomerMapper dtoCustomerMapper;
+    @GetMapping("customer")
+    @ResponseBody
+    public List<CustomerResponseDto> handleGet() {
+        return customerService.showAll();
+    }
+
+    @GetMapping("customer/{page}/{size}")
+    @ResponseBody
+    public ResponseEntity<?> handleGet(@PathVariable("page") Integer page, @PathVariable("size") Integer size) {
+        List<Customer> customers = customerService.showAllPage(page, size);
+        List<CustomerResponseDto> departmentsDto = customers.stream().map(dtoCustomerMapper::convertToDto).collect(Collectors.toList());
+        return ResponseEntity.ok(departmentsDto);
+    }
 
     @GetMapping("customer-create")
     public String customCreate(CustomerRequest customerRequest) {
